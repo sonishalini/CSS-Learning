@@ -1,0 +1,19 @@
+/* color define way
+https://www.google.com/search?q=color+picker&sxsrf=ALeKk03AvWElvzWaM7AWFZixB1z-YL0mWQ%3A1619863606609&source=hp&ei=NiiNYPONI92_3LUPpd2Q0Ao&iflsig=AINFCbYAAAAAYI02RtnOZ7_2I_6NhzAOGSihIS0h3o9I&oq=color+pic&gs_lcp=Cgdnd3Mtd2l6EAMYADIFCAAQsQMyAggAMgIIADIHCAAQhwIQFDIFCAAQsQMyBQgAELEDMgUIABCxAzIFCAAQsQMyAggAMgUIABCxAzoECCMQJzoFCAAQkQI6CAgAELEDEIMBOggILhDHARCvAToFCC4QsQNQkAZY2xpghytoAHAAeACAAbMBiAGJDJIBAzAuOZgBAKABAaoBB2d3cy13aXo&sclient=gws-wiz
+RGB->rgb(155,85,145)
+HEX->#ff8542
+HSL->hsl(8,25%,80%)
+ */
+* {
+  margin: 0;
+  padding: 0;
+}
+.red {
+  background: rgb(235, 52, 52);
+  height: 344px;
+  color: whitesmoke;
+}
+.green {
+  background: green;
+  color: rgb(226, 173, 60);
+}
