@@ -1,0 +1,9 @@
+body {
+  background-color: cornflowerblue;
+}
+#first {
+  background-color: cornsilk;
+}
+.bg-blue {
+  background-color: rgb(226, 193, 193);
+}
