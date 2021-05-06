@@ -5,9 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FlexBox</title>
-    <style></style>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        background-color: wheat;
+        /* align-items: center; */
+        height: 100vh;
+        align-items: center;
+        /* align-content: center; */
+      }
+      .box1 {
+        height: 234px;
+        width: 345px;
+        background-color: teal;
+        border: 2px solid black;
+        order: 4;
+        /* align-self: flex-end; */
+      }
+      .box2 {
+        height: 234px;
+        width: 345px;
+        background-color: aqua;
+        border: 2px solid black;
+      }
+    </style>
   </head>
   <body>
-    <div></div>
+    <div class="container">
+      <div class="box1">Box1</div>
+      <div class="box2">Box2</div>
+      <div class="box2">Box2a</div>
+      <div class="box2">Box2b</div>
+    </div>
   </body>
 </html>
+<!-- question wrap karne par iski size choti hona 
+    chahiye iski size kam nhi ho rahi wahi size me 
+    wrap ho raha hai -->
