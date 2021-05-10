@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform1</title>
+    <style>
+      .container {
+        background-color: rgb(61, 219, 166);
+        height: 46px;
+      }
+      .box {
+        border: 2px solid black;
+        display: inline-block;
+        /* transform: translate(34px, 56px) rotateX(25deg); */
+        /* transform-origin: 0; */
+        /* transform: scale(4, 7); */
+        /* transform: scaleX(8); */
+        /* transform: scaleY(8); */
+        /* transform: skew(0deg, 160deg); */
+        /* transform: rotateX(45deg); */
+      }
+
+      img {
+        width: 486px;
+        height: 455px;
+        /* transition-property: width;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in;
+        transition-delay: 3s; */
+        transition: width 1s ease-in-out, height 4s ease-in;
+      }
+      img:hover {
+        width: 56px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <img
+          id="myImage"
+          src="https://source.unsplash.com/user/erondu/910x520"
+        />
+        <button id="btn">Toggle</button>
+      </div>
+    </div>
+  </body>
+  <script>
+    myImage.style.width = "146px";
+    myImage.style.height = "16px";
+
+    btn.addEventListener("click", () => {
+      myImage.style.height = "486px";
+      if (myImage.style.width === "486px") {
+        myImage.style.width = "146px";
+      } else if (myImage.style.width === "146px") myImage.style.width = "486px";
+    });
+  </script>
+</html>
